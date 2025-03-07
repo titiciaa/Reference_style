@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" xml:lang="en">
+  <info>
+    <title>Genetics Selection Evolution (GSE)</title>
+    <id>https://www.geneticevolution.com/csl/gse-vancouver</id>
+    <link href="https://www.geneticevolution.com" rel="self"/>
+    <link href="https://citationstyles.org/" rel="documentation"/>
+    <author>
+      <name>Custom CSL for GSE</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="biology"/>
+    <summary>CSL style for Genetics Selection Evolution journal, based on Vancouver.</summary>
+  </info>
+
+  <style-options>
+    <option name="punctuation-in-note" value="false"/>
+  </style-options>
+
+  <macro name="author">
+    <group delimiter=", ">
+      <names variable="author">
+        <name form="short" and="text" et-al-min="7" et-al-use-first="6"/>
+      </names>
+    </group>
+  </macro>
+
+  <macro name="date">
+    <date variable="issued" form="text" date-parts="year"/>
+  </macro>
+
+  <macro name="title">
+    <text variable="title"/>
+  </macro>
+
+  <macro name="container-title">
+    <text variable="container-title" font-style="italic"/>
+  </macro>
+
+  <macro name="volume">
+    <text variable="volume"/>
+  </macro>
+
+  <macro name="issue">
+    <group prefix="(" suffix=")">
+      <text variable="issue"/>
+    </group>
+  </macro>
+
+  <macro name="page">
+    <text variable="page"/>
+  </macro>
+
+  <macro name="doi">
+    <group prefix="doi:" delimiter=" ">
+      <text variable="DOI"/>
+    </group>
+  </macro>
+
+  <citation>
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <bibliography>
+    <layout hanging-indent="true" delimiter=". ">
+      <text macro="author"/>
+      <text macro="title"/>
+      <text macro="container-title"/>
+      <text macro="date"/>
+      <text macro="volume"/>
+      <text macro="issue"/>
+      <text macro="page"/>
+      <text macro="doi"/>
+    </layout>
+  </bibliography>
+</style>
