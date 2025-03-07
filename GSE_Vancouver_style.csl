@@ -19,15 +19,13 @@
     
     <bibliography>
         <layout>
-            <group delimiter=". ">
-                <text variable="author" suffix=". "/>
-                <text variable="title" suffix=". "/>
-                <text variable="container-title" italic="true" suffix=". "/>
-                <text variable="issued" suffix=";"/>
-                <text variable="volume" suffix=":"/>
-                <text variable="page" suffix="."/>
-                <text variable="DOI" prefix="doi:"/>
-            </group>
+            <text variable="author" suffix=". "/>
+            <text variable="title" suffix=". "/>
+            <text variable="container-title" font-style="italic" suffix=". "/>
+            <text variable="issued" prefix="" suffix=";"/>
+            <text variable="volume" suffix=":"/>
+            <text variable="page" suffix="."/>
+            <text variable="DOI" prefix=" doi:"/>
         </layout>
     </bibliography>
 </style>
